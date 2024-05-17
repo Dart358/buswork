@@ -1,0 +1,630 @@
+ERROR - 2024-05-09 13:01:39 --> mysqli_sql_exception: Table 'users' already exists in C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xamp\htdocs\buswork\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xamp\htdocs\buswork\app\Database\Migrations\2024-05-09-125953_CreateUsersTable.php(20): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\xamp\htdocs\buswork\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateUsersTable->up()
+#6 C:\xamp\htdocs\buswork\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xamp\htdocs\buswork\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xamp\htdocs\buswork\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xamp\htdocs\buswork\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xamp\htdocs\buswork\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-05-09 13:01:39 --> mysqli_sql_exception: Invalid default value for 'created_at' in C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `o...', 0)
+#1 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `o...')
+#2 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `o...')
+#3 C:\xamp\htdocs\buswork\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `o...')
+#4 C:\xamp\htdocs\buswork\app\Database\Migrations\2024-05-09-130101_CreateOrderTable.php(22): CodeIgniter\Database\Forge->createTable('order')
+#5 C:\xamp\htdocs\buswork\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateOrderTable->up()
+#6 C:\xamp\htdocs\buswork\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xamp\htdocs\buswork\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xamp\htdocs\buswork\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xamp\htdocs\buswork\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xamp\htdocs\buswork\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-05-09 13:09:30 --> mysqli_sql_exception: Unknown column 'picture' in 'field list' in C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xamp\htdocs\buswork\system\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', NULL, false)
+#4 C:\xamp\htdocs\buswork\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xamp\htdocs\buswork\app\Database\Seeds\UsersSeeder.php(31): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xamp\htdocs\buswork\system\Database\Seeder.php(146): App\Database\Seeds\UsersSeeder->run()
+#7 C:\xamp\htdocs\buswork\app\Database\Seeds\DatabaseSeeder.php(11): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\xamp\htdocs\buswork\system\Database\Seeder.php(146): App\Database\Seeds\DatabaseSeeder->run()
+#9 C:\xamp\htdocs\buswork\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#10 C:\xamp\htdocs\buswork\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#11 C:\xamp\htdocs\buswork\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#12 C:\xamp\htdocs\buswork\spark(97): CodeIgniter\CLI\Console->run()
+#13 {main}
+ERROR - 2024-05-09 13:09:30 --> mysqli_sql_exception: Table 'bus_booking.order' doesn't exist in C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xamp\htdocs\buswork\system\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', NULL, false)
+#4 C:\xamp\htdocs\buswork\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xamp\htdocs\buswork\app\Database\Seeds\OrderSeeder.php(35): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xamp\htdocs\buswork\system\Database\Seeder.php(146): App\Database\Seeds\OrderSeeder->run()
+#7 C:\xamp\htdocs\buswork\app\Database\Seeds\DatabaseSeeder.php(15): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\xamp\htdocs\buswork\system\Database\Seeder.php(146): App\Database\Seeds\DatabaseSeeder->run()
+#9 C:\xamp\htdocs\buswork\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#10 C:\xamp\htdocs\buswork\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#11 C:\xamp\htdocs\buswork\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#12 C:\xamp\htdocs\buswork\spark(97): CodeIgniter\CLI\Console->run()
+#13 {main}
+ERROR - 2024-05-09 13:32:02 --> mysqli_sql_exception: Unknown table 'bus_booking.order' in C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php(295): mysqli->query('DROP TABLE `ord...', 0)
+#1 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `ord...')
+#2 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `ord...')
+#3 C:\xamp\htdocs\buswork\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `ord...')
+#4 C:\xamp\htdocs\buswork\app\Database\Migrations\2024-05-09-130101_CreateOrderTable.php(27): CodeIgniter\Database\Forge->dropTable('order')
+#5 C:\xamp\htdocs\buswork\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateOrderTable->down()
+#6 C:\xamp\htdocs\buswork\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xamp\htdocs\buswork\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\xamp\htdocs\buswork\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xamp\htdocs\buswork\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xamp\htdocs\buswork\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-05-09 13:32:07 --> mysqli_sql_exception: Invalid default value for 'created_at' in C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xamp\htdocs\buswork\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xamp\htdocs\buswork\app\Database\Migrations\2024-05-09-125953_CreateUsersTable.php(21): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\xamp\htdocs\buswork\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateUsersTable->up()
+#6 C:\xamp\htdocs\buswork\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xamp\htdocs\buswork\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xamp\htdocs\buswork\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xamp\htdocs\buswork\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xamp\htdocs\buswork\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-05-09 13:32:07 --> mysqli_sql_exception: Invalid default value for 'created_at' in C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `o...', 0)
+#1 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `o...')
+#2 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `o...')
+#3 C:\xamp\htdocs\buswork\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `o...')
+#4 C:\xamp\htdocs\buswork\app\Database\Migrations\2024-05-09-130101_CreateOrderTable.php(22): CodeIgniter\Database\Forge->createTable('order')
+#5 C:\xamp\htdocs\buswork\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateOrderTable->up()
+#6 C:\xamp\htdocs\buswork\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xamp\htdocs\buswork\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xamp\htdocs\buswork\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xamp\htdocs\buswork\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xamp\htdocs\buswork\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+CRITICAL - 2024-05-09 13:32:41 --> Call to undefined method CodeIgniter\Router\RouteCollection::addFilter()
+in APPPATH\Config\Routes.php on line 59.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xamp\\htdocs\\buswork\\public\\index.php')
+CRITICAL - 2024-05-09 13:33:31 --> Call to undefined method CodeIgniter\Router\RouteCollection::addFilter()
+in APPPATH\Config\Routes.php on line 59.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xamp\\htdocs\\buswork\\public\\index.php')
+CRITICAL - 2024-05-09 13:33:42 --> Call to undefined method CodeIgniter\Router\RouteCollection::addFilter()
+in APPPATH\Config\Routes.php on line 59.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xamp\\htdocs\\buswork\\public\\index.php')
+CRITICAL - 2024-05-09 13:33:43 --> Call to undefined method CodeIgniter\Router\RouteCollection::addFilter()
+in APPPATH\Config\Routes.php on line 59.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xamp\\htdocs\\buswork\\public\\index.php')
+CRITICAL - 2024-05-09 13:37:04 --> Call to undefined method CodeIgniter\Router\RouteCollection::addFilter()
+in APPPATH\Config\Routes.php on line 59.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xamp\\htdocs\\buswork\\public\\index.php')
+CRITICAL - 2024-05-09 13:37:18 --> Call to undefined method CodeIgniter\Router\RouteCollection::addFilter()
+in APPPATH\Config\Routes.php on line 59.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xamp\\htdocs\\buswork\\public\\index.php')
+CRITICAL - 2024-05-09 13:39:34 --> Call to undefined method CodeIgniter\Router\RouteCollection::addFilter()
+in APPPATH\Config\Routes.php on line 59.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 13:41:46 --> Call to undefined method CodeIgniter\Router\RouteCollection::addFilter()
+in APPPATH\Config\Routes.php on line 59.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 13:41:53 --> Call to undefined method CodeIgniter\Router\RouteCollection::addFilter()
+in APPPATH\Config\Routes.php on line 59.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 13:41:55 --> Call to undefined method CodeIgniter\Router\RouteCollection::addFilter()
+in APPPATH\Config\Routes.php on line 59.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 13:41:55 --> Call to undefined method CodeIgniter\Router\RouteCollection::addFilter()
+in APPPATH\Config\Routes.php on line 59.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 13:41:55 --> Call to undefined method CodeIgniter\Router\RouteCollection::addFilter()
+in APPPATH\Config\Routes.php on line 59.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 13:42:00 --> Call to undefined method CodeIgniter\Router\RouteCollection::addFilter()
+in APPPATH\Config\Routes.php on line 59.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xamp\\htdocs\\buswork\\public\\index.php')
+ERROR - 2024-05-09 13:45:22 --> mysqli_sql_exception: Unknown table 'bus_booking.order' in C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php(295): mysqli->query('DROP TABLE `ord...', 0)
+#1 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `ord...')
+#2 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `ord...')
+#3 C:\xamp\htdocs\buswork\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `ord...')
+#4 C:\xamp\htdocs\buswork\app\Database\Migrations\2024-05-09-130101_CreateOrderTable.php(27): CodeIgniter\Database\Forge->dropTable('order')
+#5 C:\xamp\htdocs\buswork\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateOrderTable->down()
+#6 C:\xamp\htdocs\buswork\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xamp\htdocs\buswork\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\xamp\htdocs\buswork\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xamp\htdocs\buswork\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xamp\htdocs\buswork\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-05-09 13:46:23 --> mysqli_sql_exception: Invalid default value for 'created_at' in C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xamp\htdocs\buswork\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xamp\htdocs\buswork\app\Database\Migrations\2024-05-09-125953_CreateUsersTable.php(21): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\xamp\htdocs\buswork\system\Database\MigrationRunner.php(877): App\Database\Migrations\CreateUsersTable->up()
+#6 C:\xamp\htdocs\buswork\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xamp\htdocs\buswork\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xamp\htdocs\buswork\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xamp\htdocs\buswork\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xamp\htdocs\buswork\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+CRITICAL - 2024-05-09 13:49:41 --> Call to undefined method CodeIgniter\Router\RouteCollection::addFilter()
+in APPPATH\Config\Routes.php on line 59.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 13:49:42 --> Call to undefined method CodeIgniter\Router\RouteCollection::addFilter()
+in APPPATH\Config\Routes.php on line 59.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 13:49:42 --> Call to undefined method CodeIgniter\Router\RouteCollection::addFilter()
+in APPPATH\Config\Routes.php on line 59.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-09 13:49:51 --> Call to undefined method CodeIgniter\Router\RouteCollection::addFilter()
+in APPPATH\Config\Routes.php on line 59.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xamp\\htdocs\\buswork\\public\\index.php')
+CRITICAL - 2024-05-09 13:53:49 --> Call to undefined method CodeIgniter\Router\RouteCollection::addFilter()
+in APPPATH\Config\Routes.php on line 60.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xamp\\htdocs\\buswork\\public\\index.php')
+ERROR - 2024-05-09 14:13:34 --> JWT Validation Failed: Wrong number of segments
+ERROR - 2024-05-09 14:14:05 --> JWT Validation Failed: Wrong number of segments
+ERROR - 2024-05-09 14:14:22 --> JWT Validation Failed: Wrong number of segments
+DEBUG - 2024-05-09 14:22:44 --> JwtAuthGuard: Checking Authorization Header
+DEBUG - 2024-05-09 14:22:44 --> JwtAuthGuard: Authorization Header Not Found
+DEBUG - 2024-05-09 14:22:44 --> JwtAuthGuard: Unauthorized Access
+DEBUG - 2024-05-09 14:23:07 --> JwtAuthGuard: Checking Authorization Header
+DEBUG - 2024-05-09 14:23:07 --> JwtAuthGuard: Authorization Header Not Found
+DEBUG - 2024-05-09 14:23:07 --> JwtAuthGuard: Unauthorized Access
+DEBUG - 2024-05-09 14:24:26 --> JwtAuthGuard: Checking Authorization Header
+DEBUG - 2024-05-09 14:24:26 --> JwtAuthGuard: Authorization Header Not Found
+DEBUG - 2024-05-09 14:24:26 --> JwtAuthGuard: Unauthorized Access
+DEBUG - 2024-05-09 14:25:44 --> JwtAuthGuard: Checking Authorization Header
+DEBUG - 2024-05-09 14:25:44 --> JwtAuthGuard: Authorization Header Not Found
+DEBUG - 2024-05-09 14:25:44 --> JwtAuthGuard: Unauthorized Access
+DEBUG - 2024-05-09 14:25:50 --> JwtAuthGuard: Checking Authorization Header
+DEBUG - 2024-05-09 14:25:50 --> JwtAuthGuard: Authorization Header Not Found
+DEBUG - 2024-05-09 14:25:50 --> JwtAuthGuard: Unauthorized Access
+CRITICAL - 2024-05-09 14:30:12 --> Undefined array key "password"
+in APPPATH\Controllers\AuthController.php on line 23.
+ 1 APPPATH\Controllers\AuthController.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'C:\\xamp\\htdocs\\buswork\\app\\Controllers\\AuthController.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AuthController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xamp\\htdocs\\buswork\\public\\index.php')
+DEBUG - 2024-05-09 15:13:14 --> Register Request Data: []
+DEBUG - 2024-05-09 15:13:47 --> Register Request Data: []
+DEBUG - 2024-05-09 15:14:10 --> Register Request Data: []
+DEBUG - 2024-05-09 15:14:30 --> Register Request Data: []
+DEBUG - 2024-05-09 15:17:09 --> Register Request Data: []
+DEBUG - 2024-05-09 15:19:38 --> Register Request Data: {"email":"testuser@example.com","name":"Test User","password":"password123"}
+ERROR - 2024-05-09 15:19:38 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xamp\htdocs\buswork\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xamp\htdocs\buswork\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xamp\htdocs\buswork\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xamp\htdocs\buswork\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xamp\htdocs\buswork\app\Controllers\AuthController.php(34): CodeIgniter\Model->insert(Array)
+#8 C:\xamp\htdocs\buswork\system\CodeIgniter.php(932): App\Controllers\AuthController->register()
+#9 C:\xamp\htdocs\buswork\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xamp\htdocs\buswork\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xamp\htdocs\buswork\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xamp\htdocs\buswork\system\Commands\Server\rewrite.php(47): require_once('C:\\xamp\\htdocs\\...')
+#13 {main}
+DEBUG - 2024-05-09 15:23:23 --> Register Request Data: {"email":"testuser@example.com","name":"Test User","password":"password123"}
+DEBUG - 2024-05-09 15:23:43 --> Register Request Data: {"email":"testuser@example.com","name":"Test User","password":"password123"}
+ERROR - 2024-05-09 15:23:43 --> mysqli_sql_exception: Duplicate entry 'testuser@example.com' for key 'email' in C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xamp\htdocs\buswork\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xamp\htdocs\buswork\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xamp\htdocs\buswork\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xamp\htdocs\buswork\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xamp\htdocs\buswork\app\Controllers\AuthController.php(34): CodeIgniter\Model->insert(Array)
+#8 C:\xamp\htdocs\buswork\system\CodeIgniter.php(932): App\Controllers\AuthController->register()
+#9 C:\xamp\htdocs\buswork\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xamp\htdocs\buswork\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xamp\htdocs\buswork\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xamp\htdocs\buswork\system\Commands\Server\rewrite.php(47): require_once('C:\\xamp\\htdocs\\...')
+#13 {main}
+DEBUG - 2024-05-09 15:27:08 --> Register Request Data: {"email":"testme@example.com","name":"Test User","password":"password1234"}
+DEBUG - 2024-05-09 16:19:11 --> Login Request Data: email=, password=
+DEBUG - 2024-05-09 16:19:11 --> User Fetched: null
+DEBUG - 2024-05-09 16:19:11 --> Password Verification Failed
+DEBUG - 2024-05-09 16:21:44 --> Login Request Data: {"email":"testuser@example.com","password":"password123"}
+DEBUG - 2024-05-09 16:21:44 --> Email: testuser@example.com, Password: password123
+DEBUG - 2024-05-09 16:21:44 --> User Fetched: {"id":"663cea6ba0ef3","email":"testuser@example.com","name":"Test User","picture":null,"role":"user","password":"$2y$10$68xZusZQX0sgpNyU8T0SzeQIbPXrh3FfM53MjrOGu.wVC9kp35akW","created_at":"2024-05-09 15:23:23","updated_at":"2024-05-09 15:23:23"}
+DEBUG - 2024-05-09 16:21:44 --> Password Verification Failed
+DEBUG - 2024-05-09 16:24:34 --> Login Request Data: {"email":"testuser@example.com","password":"password123"}
+DEBUG - 2024-05-09 16:24:34 --> Email: testuser@example.com, Password: password123
+DEBUG - 2024-05-09 16:24:34 --> User Fetched: {"id":"663cea6ba0ef3","email":"testuser@example.com","name":"Test User","picture":null,"role":"user","password":"$2y$10$68xZusZQX0sgpNyU8T0SzeQIbPXrh3FfM53MjrOGu.wVC9kp35akW","created_at":"2024-05-09 15:23:23","updated_at":"2024-05-09 15:23:23"}
+DEBUG - 2024-05-09 16:24:34 --> Password Verification Failed
+DEBUG - 2024-05-09 16:31:20 --> Register Request Data: {"email":"testuser2@example.com","name":"Test User 2","password":"password123"}
+DEBUG - 2024-05-09 16:31:20 --> Hashed Password: $2y$10$rlbkil8L6hZ1AmkeTuXinuFGpKa.GyubTTCNF7sqs35rfu1zy/BLe
+DEBUG - 2024-05-09 16:31:37 --> Login Request Data: {"email":"testuser2@example.com","password":"password123"}
+DEBUG - 2024-05-09 16:31:37 --> Email: testuser2@example.com, Password: password123
+DEBUG - 2024-05-09 16:31:37 --> User Fetched: {"id":"663cfa58e362c","email":"testuser2@example.com","name":"Test User 2","picture":null,"role":"user","password":"$2y$10$1lJK6ppQ\/amRll9ehUwyJOxfLAgKGgGSJ8inYmuTNeb06jnuBJaui","created_at":"2024-05-09 16:31:20","updated_at":"2024-05-09 16:31:20"}
+DEBUG - 2024-05-09 16:31:37 --> Password Verification Failed. Input Password: password123 | Hashed Password: $2y$10$1lJK6ppQ/amRll9ehUwyJOxfLAgKGgGSJ8inYmuTNeb06jnuBJaui
+DEBUG - 2024-05-09 16:35:23 --> Register Request Data: {"email":"testuser3@example.com","name":"Test User 3","password":"password123"}
+DEBUG - 2024-05-09 16:35:23 --> Hashed Password: $2y$10$07JIVrtizJ2Lc7MBGdVN0Ooh5fGOrh5iSFpuNw.udxS7VlSU8MQni
+DEBUG - 2024-05-09 16:35:37 --> Login Request Data: {"email":"testuser3@example.com","password":"password123"}
+DEBUG - 2024-05-09 16:35:37 --> Email: testuser3@example.com, Password: password123
+DEBUG - 2024-05-09 16:35:37 --> User Fetched: {"id":"663cfb4b01a01","email":"testuser3@example.com","name":"Test User 3","picture":null,"role":"user","password":"$2y$10$8vrIKjvXA\/3s6K8DTfouj.N.nrIq5SfCf.m7uqSwotAiQE2XQfTQy","created_at":"2024-05-09 16:35:23","updated_at":"2024-05-09 16:35:23"}
+DEBUG - 2024-05-09 16:35:37 --> Password Verification Failed. Input Password: password123 | Hashed Password: $2y$10$8vrIKjvXA/3s6K8DTfouj.N.nrIq5SfCf.m7uqSwotAiQE2XQfTQy
+DEBUG - 2024-05-09 16:44:11 --> Register Request Data: {"email":"testuser4@example.com","name":"Test User 4","password":"password123"}
+DEBUG - 2024-05-09 16:44:11 --> Hashed Password: $2y$10$dPycFu2BSiqfKgUJAmfpvubty5/gFEXWzY61xx1k5s7tlLFLryTcG
+DEBUG - 2024-05-09 16:44:57 --> Login Request Data: {"email":"testuser4@example.com","password":"password123"}
+DEBUG - 2024-05-09 16:44:57 --> Email: testuser4@example.com, Password: password123
+DEBUG - 2024-05-09 16:44:58 --> User Fetched: {"id":"663cfd5b7b93b","email":"testuser4@example.com","name":"Test User 4","picture":null,"role":"user","password":"$2y$10$2vMTnmq6IdE7H.iFHFPrke\/wpKVxUHtZ70Z7nw2HOD5Mjh1DDucMu","created_at":"2024-05-09 16:44:11","updated_at":"2024-05-09 16:44:11"}
+DEBUG - 2024-05-09 16:44:58 --> Input Password: password123 | Hashed Password: $2y$10$2vMTnmq6IdE7H.iFHFPrke/wpKVxUHtZ70Z7nw2HOD5Mjh1DDucMu
+DEBUG - 2024-05-09 16:44:58 --> Password Verification Failed
+DEBUG - 2024-05-09 16:47:56 --> Register Request Data: {"email":"testuser5@example.com","name":"Test User 5","password":"password123"}
+DEBUG - 2024-05-09 16:47:56 --> Hashed Password: $2y$10$h.2OZgBD/06NijVv/lYbKuPf4PS3UPYBpoBhg5Na.zMCpLn7VMDfi
+DEBUG - 2024-05-09 16:48:17 --> Login Request Data: {"email":"testuser5@example.com","password":"password123"}
+DEBUG - 2024-05-09 16:48:17 --> Email: testuser5@example.com, Password: password123
+DEBUG - 2024-05-09 16:48:17 --> User Fetched: {"id":"663cfe3cd5dd5","email":"testuser5@example.com","name":"Test User 5","picture":null,"role":"user","password":"$2y$10$CBF4sGlCMIKjcywPCdPzcOIYxXzA\/QcFAaLWcyHgzeB4Npqbms5be","created_at":"2024-05-09 16:47:56","updated_at":"2024-05-09 16:47:56"}
+DEBUG - 2024-05-09 16:48:17 --> Input Password: password123 | Hashed Password: $2y$10$CBF4sGlCMIKjcywPCdPzcOIYxXzA/QcFAaLWcyHgzeB4Npqbms5be
+DEBUG - 2024-05-09 16:48:17 --> Password Verification Failed
+DEBUG - 2024-05-09 16:52:45 --> Register Request Data: {"email":"testuser6@example.com","name":"Test User 6","password":"password123"}
+DEBUG - 2024-05-09 16:52:45 --> Hashed Password: $2y$10$Da9Rqt7l2zG.CCg6CR.zU.YdGanJgl9SwV8qzbeO8gpTb8XEKou5i
+DEBUG - 2024-05-09 16:52:59 --> Login Request Data: {"email":"testuser6@example.com","password":"password123"}
+DEBUG - 2024-05-09 16:52:59 --> Email: testuser6@example.com, Password: password123
+DEBUG - 2024-05-09 16:52:59 --> User Fetched: {"id":"663cff5d65407","email":"testuser6@example.com","name":"Test User 6","picture":null,"role":"user","password":"$2y$10$gYqGf562H\/xzLfdcNFivaOA7PHlguk2sjh2E6DieSukpL42UdjrtS","created_at":"2024-05-09 16:52:45","updated_at":"2024-05-09 16:52:45"}
+DEBUG - 2024-05-09 16:52:59 --> Input Password: password123 | Hashed Password: $2y$10$gYqGf562H/xzLfdcNFivaOA7PHlguk2sjh2E6DieSukpL42UdjrtS
+DEBUG - 2024-05-09 16:52:59 --> Password Verification Failed
+DEBUG - 2024-05-09 16:53:03 --> Login Request Data: {"email":"testuser6@example.com","password":"password12"}
+DEBUG - 2024-05-09 16:53:03 --> Email: testuser6@example.com, Password: password12
+DEBUG - 2024-05-09 16:53:03 --> User Fetched: {"id":"663cff5d65407","email":"testuser6@example.com","name":"Test User 6","picture":null,"role":"user","password":"$2y$10$gYqGf562H\/xzLfdcNFivaOA7PHlguk2sjh2E6DieSukpL42UdjrtS","created_at":"2024-05-09 16:52:45","updated_at":"2024-05-09 16:52:45"}
+DEBUG - 2024-05-09 16:53:03 --> Input Password: password12 | Hashed Password: $2y$10$gYqGf562H/xzLfdcNFivaOA7PHlguk2sjh2E6DieSukpL42UdjrtS
+DEBUG - 2024-05-09 16:53:03 --> Password Verification Failed
+DEBUG - 2024-05-09 16:57:21 --> Register Request Data: {"email":"testuser7@example.com","name":"Test User 7","password":"password123"}
+DEBUG - 2024-05-09 16:57:21 --> Password: password123
+DEBUG - 2024-05-09 16:57:29 --> Register Request Data: {"email":"testuser7@example.com","password":"password123"}
+DEBUG - 2024-05-09 16:57:29 --> Password: password123
+ERROR - 2024-05-09 16:57:29 --> mysqli_sql_exception: Duplicate entry 'testuser7@example.com' for key 'email' in C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xamp\htdocs\buswork\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xamp\htdocs\buswork\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xamp\htdocs\buswork\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xamp\htdocs\buswork\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xamp\htdocs\buswork\app\Controllers\AuthController.php(73): CodeIgniter\Model->insert(Array)
+#8 C:\xamp\htdocs\buswork\system\CodeIgniter.php(932): App\Controllers\AuthController->register()
+#9 C:\xamp\htdocs\buswork\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xamp\htdocs\buswork\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xamp\htdocs\buswork\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xamp\htdocs\buswork\system\Commands\Server\rewrite.php(47): require_once('C:\\xamp\\htdocs\\...')
+#13 {main}
+DEBUG - 2024-05-09 16:57:38 --> Login Request Data: {"email":"testuser7@example.com","password":"password123"}
+DEBUG - 2024-05-09 16:57:38 --> Email: testuser7@example.com, Password: password123
+DEBUG - 2024-05-09 16:57:38 --> User Fetched: {"id":"663d00717132c","email":"testuser7@example.com","name":"Test User 7","picture":null,"role":"user","password":"$2y$10$XdIxKDY06HU64LVqMl\/1CuLpRNYZ.K.yRRspOPxqtOdMF\/2smYuey","created_at":"2024-05-09 16:57:21","updated_at":"2024-05-09 16:57:21"}
+DEBUG - 2024-05-09 16:57:38 --> Password Verification Failed
+DEBUG - 2024-05-09 16:59:54 --> Register Request Data: {"email":"testuser8@example.com","name":"Test User 8","password":"password123"}
+DEBUG - 2024-05-09 16:59:54 --> Password: password123
+DEBUG - 2024-05-09 17:00:06 --> Login Request Data: {"email":"testuser8@example.com","password":"password123"}
+DEBUG - 2024-05-09 17:00:06 --> Email: testuser8@example.com, Password: password123
+DEBUG - 2024-05-09 17:00:06 --> User Fetched: {"id":"663d010a49136","email":"testuser8@example.com","name":"Test User 8","picture":null,"role":"user","password":"$2y$10$PfdNycLtdzh9gxkVgVVSvO94dezC86dMwubI..V7TtHlELy5cKbKK","created_at":"2024-05-09 16:59:54","updated_at":"2024-05-09 16:59:54"}
+DEBUG - 2024-05-09 17:00:06 --> Password Verification Failed
+DEBUG - 2024-05-09 17:03:49 --> Register Request Data: {"email":"testuser9@example.com","name":"Test User 9","password":"password123"}
+DEBUG - 2024-05-09 17:03:49 --> Password: password123
+DEBUG - 2024-05-09 17:07:12 --> Register Request Data: null
+DEBUG - 2024-05-09 17:07:27 --> Login Request Data: null
+DEBUG - 2024-05-09 17:07:27 --> Email: , Password: 
+DEBUG - 2024-05-09 17:07:27 --> User Fetched: null
+DEBUG - 2024-05-09 17:07:27 --> User not found
+DEBUG - 2024-05-09 17:07:43 --> Login Request Data: null
+DEBUG - 2024-05-09 17:07:43 --> Email: , Password: 
+DEBUG - 2024-05-09 17:07:43 --> User Fetched: null
+DEBUG - 2024-05-09 17:07:43 --> User not found
+DEBUG - 2024-05-09 17:07:56 --> Login Request Data: null
+DEBUG - 2024-05-09 17:07:56 --> Email: , Password: 
+DEBUG - 2024-05-09 17:07:56 --> User Fetched: null
+DEBUG - 2024-05-09 17:07:56 --> User not found
+DEBUG - 2024-05-09 17:08:59 --> Register Request Data: {"email":"testuser9@example.com","name":"Test User 9","password":"password123"}
+DEBUG - 2024-05-09 17:08:59 --> Password: password123
+ERROR - 2024-05-09 17:08:59 --> mysqli_sql_exception: Duplicate entry 'testuser9@example.com' for key 'email' in C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xamp\htdocs\buswork\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xamp\htdocs\buswork\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xamp\htdocs\buswork\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xamp\htdocs\buswork\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xamp\htdocs\buswork\app\Controllers\AuthController.php(73): CodeIgniter\Model->insert(Array)
+#8 C:\xamp\htdocs\buswork\system\CodeIgniter.php(932): App\Controllers\AuthController->register()
+#9 C:\xamp\htdocs\buswork\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xamp\htdocs\buswork\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xamp\htdocs\buswork\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xamp\htdocs\buswork\system\Commands\Server\rewrite.php(47): require_once('C:\\xamp\\htdocs\\...')
+#13 {main}
+DEBUG - 2024-05-09 17:09:10 --> Register Request Data: {"email":"testuser9@example.com","name":"Test User 10","password":"password123"}
+DEBUG - 2024-05-09 17:09:10 --> Password: password123
+ERROR - 2024-05-09 17:09:10 --> mysqli_sql_exception: Duplicate entry 'testuser9@example.com' for key 'email' in C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xamp\htdocs\buswork\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xamp\htdocs\buswork\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xamp\htdocs\buswork\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xamp\htdocs\buswork\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xamp\htdocs\buswork\app\Controllers\AuthController.php(73): CodeIgniter\Model->insert(Array)
+#8 C:\xamp\htdocs\buswork\system\CodeIgniter.php(932): App\Controllers\AuthController->register()
+#9 C:\xamp\htdocs\buswork\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xamp\htdocs\buswork\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xamp\htdocs\buswork\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xamp\htdocs\buswork\system\Commands\Server\rewrite.php(47): require_once('C:\\xamp\\htdocs\\...')
+#13 {main}
+DEBUG - 2024-05-09 17:09:16 --> Register Request Data: {"email":"testuser9@example.com","name":"Test User 10","password":"password123"}
+DEBUG - 2024-05-09 17:09:16 --> Password: password123
+ERROR - 2024-05-09 17:09:16 --> mysqli_sql_exception: Duplicate entry 'testuser9@example.com' for key 'email' in C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xamp\htdocs\buswork\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xamp\htdocs\buswork\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xamp\htdocs\buswork\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xamp\htdocs\buswork\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xamp\htdocs\buswork\app\Controllers\AuthController.php(73): CodeIgniter\Model->insert(Array)
+#8 C:\xamp\htdocs\buswork\system\CodeIgniter.php(932): App\Controllers\AuthController->register()
+#9 C:\xamp\htdocs\buswork\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xamp\htdocs\buswork\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xamp\htdocs\buswork\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xamp\htdocs\buswork\system\Commands\Server\rewrite.php(47): require_once('C:\\xamp\\htdocs\\...')
+#13 {main}
+DEBUG - 2024-05-09 17:09:22 --> Register Request Data: {"email":"testuser10@example.com","name":"Test User 10","password":"password123"}
+DEBUG - 2024-05-09 17:09:22 --> Password: password123
+DEBUG - 2024-05-09 17:10:30 --> Login Request Data: {"email":"testuser10@example.com","password":"password123"}
+DEBUG - 2024-05-09 17:10:30 --> Email: testuser10@example.com, Password: password123
+DEBUG - 2024-05-09 17:10:30 --> User Fetched: {"id":"663d0342822e3","email":"testuser10@example.com","name":"Test User 10","picture":null,"role":"user","password":"$2y$10$XdVQ9eoC1MFMJ9dFW007Y.taPMJ4el4myOrxqUr90qdYX958M4AU2","created_at":"2024-05-09 17:09:22","updated_at":"2024-05-09 17:09:22"}
+DEBUG - 2024-05-09 17:10:30 --> Password Verification Failed
+DEBUG - 2024-05-09 17:16:04 --> Register Request Data: {"email":"testuser11@example.com","name":"Test User 11","password":"password123"}
+DEBUG - 2024-05-09 17:16:04 --> Password set to plaintext: password123
+DEBUG - 2024-05-09 17:17:42 --> Register Request Data: {"email":"testuser12@example.com","name":"Test User 12","password":"password123"}
+DEBUG - 2024-05-09 17:17:42 --> Password set to plaintext: password123
+DEBUG - 2024-05-09 17:17:49 --> Register Request Data: {"email":"testuser12@example.com","password":"password123"}
+DEBUG - 2024-05-09 17:17:49 --> Password set to plaintext: password123
+ERROR - 2024-05-09 17:17:49 --> mysqli_sql_exception: Duplicate entry 'testuser12@example.com' for key 'email' in C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xamp\htdocs\buswork\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xamp\htdocs\buswork\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xamp\htdocs\buswork\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xamp\htdocs\buswork\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xamp\htdocs\buswork\app\Controllers\AuthController.php(65): CodeIgniter\Model->insert(Array)
+#8 C:\xamp\htdocs\buswork\system\CodeIgniter.php(932): App\Controllers\AuthController->register()
+#9 C:\xamp\htdocs\buswork\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xamp\htdocs\buswork\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xamp\htdocs\buswork\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xamp\htdocs\buswork\system\Commands\Server\rewrite.php(47): require_once('C:\\xamp\\htdocs\\...')
+#13 {main}
+DEBUG - 2024-05-09 17:17:58 --> Login Request Data: {"email":"testuser12@example.com","password":"password123"}
+DEBUG - 2024-05-09 17:17:58 --> Email: testuser12@example.com, Password: password123
+DEBUG - 2024-05-09 17:17:58 --> User Fetched: {"id":"663d05365a712","email":"testuser12@example.com","name":"Test User 12","picture":null,"role":"user","password":"password123","created_at":"2024-05-09 17:17:42","updated_at":"2024-05-09 17:17:42"}
+DEBUG - 2024-05-09 17:17:58 --> JWT Token Created: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRlc3R1c2VyMTJAZXhhbXBsZS5jb20iLCJpZCI6IjY2M2QwNTM2NWE3MTIiLCJpYXQiOjE3MTUyNzUwNzgsImV4cCI6MTcxNzg2NzA3OH0.OCbpV0G84G-jZjB8LyJXHfhq6JcGAeyKMsZ5A2xg9AA
+DEBUG - 2024-05-09 17:17:58 --> Token Created: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRlc3R1c2VyMTJAZXhhbXBsZS5jb20iLCJpZCI6IjY2M2QwNTM2NWE3MTIiLCJpYXQiOjE3MTUyNzUwNzgsImV4cCI6MTcxNzg2NzA3OH0.OCbpV0G84G-jZjB8LyJXHfhq6JcGAeyKMsZ5A2xg9AA
+DEBUG - 2024-05-09 17:50:25 --> Register Request Data: {"email":"crentsilkwayie@gmail.com","name":"Kiki","password":"Kofi Boy"}
+DEBUG - 2024-05-09 17:50:25 --> Password set to plaintext: Kofi Boy
+DEBUG - 2024-05-09 17:51:01 --> Register Request Data: {"email":"crentsilkwayie@gmail.com","name":"Kiki","password":"Kofi Boy"}
+DEBUG - 2024-05-09 17:51:01 --> Password set to plaintext: Kofi Boy
+ERROR - 2024-05-09 17:51:01 --> mysqli_sql_exception: Duplicate entry 'crentsilkwayie@gmail.com' for key 'email' in C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xamp\htdocs\buswork\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xamp\htdocs\buswork\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xamp\htdocs\buswork\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xamp\htdocs\buswork\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xamp\htdocs\buswork\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xamp\htdocs\buswork\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xamp\htdocs\buswork\app\Controllers\AuthController.php(65): CodeIgniter\Model->insert(Array)
+#8 C:\xamp\htdocs\buswork\system\CodeIgniter.php(932): App\Controllers\AuthController->register()
+#9 C:\xamp\htdocs\buswork\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xamp\htdocs\buswork\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xamp\htdocs\buswork\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xamp\htdocs\buswork\system\Commands\Server\rewrite.php(47): require_once('C:\\xamp\\htdocs\\...')
+#13 {main}
+DEBUG - 2024-05-09 17:52:15 --> Login Request Data: {"email":"crentsilkwayie@gmail.com ","password":"Kofi Boy"}
+DEBUG - 2024-05-09 17:52:15 --> Email: crentsilkwayie@gmail.com , Password: Kofi Boy
+DEBUG - 2024-05-09 17:52:15 --> User Fetched: {"id":"663d0ce16bd80","email":"crentsilkwayie@gmail.com","name":"Kiki","picture":null,"role":"user","password":"Kofi Boy","created_at":"2024-05-09 17:50:25","updated_at":"2024-05-09 17:50:25"}
+DEBUG - 2024-05-09 17:52:15 --> JWT Token Created: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImNyZW50c2lsa3dheWllQGdtYWlsLmNvbSIsImlkIjoiNjYzZDBjZTE2YmQ4MCIsImlhdCI6MTcxNTI3NzEzNSwiZXhwIjoxNzE3ODY5MTM1fQ.wRzuhdoCK_j0QCqfrErNAujtaUmU9_aBr0pma8H6XBw
+DEBUG - 2024-05-09 17:52:15 --> Token Created: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImNyZW50c2lsa3dheWllQGdtYWlsLmNvbSIsImlkIjoiNjYzZDBjZTE2YmQ4MCIsImlhdCI6MTcxNTI3NzEzNSwiZXhwIjoxNzE3ODY5MTM1fQ.wRzuhdoCK_j0QCqfrErNAujtaUmU9_aBr0pma8H6XBw
+DEBUG - 2024-05-09 22:08:09 --> Register Request Data: {"email":"testuser@example.com","name":"Test User","password":"password123"}
+DEBUG - 2024-05-09 22:08:09 --> Password set to plaintext: password123
+DEBUG - 2024-05-09 22:08:24 --> Login Request Data: {"email":"testuser@example.com","password":"password123"}
+DEBUG - 2024-05-09 22:08:24 --> Email: testuser@example.com, Password: password123
+DEBUG - 2024-05-09 22:08:24 --> User Fetched: {"id":"663d494994625","email":"testuser@example.com","name":"Test User","picture":null,"role":"user","password":"password123","created_at":"2024-05-09 22:08:09","updated_at":"2024-05-09 22:08:09"}
+DEBUG - 2024-05-09 22:08:24 --> JWT Token Created: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRlc3R1c2VyQGV4YW1wbGUuY29tIiwiaWQiOiI2NjNkNDk0OTk0NjI1IiwiaWF0IjoxNzE1MjkyNTA0LCJleHAiOjE3MTc4ODQ1MDR9.eMUqs7DzYzLV-5HbNusmwnoB1MMym6BIIkI241N7GSQ
+DEBUG - 2024-05-09 22:08:24 --> Token Created: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRlc3R1c2VyQGV4YW1wbGUuY29tIiwiaWQiOiI2NjNkNDk0OTk0NjI1IiwiaWF0IjoxNzE1MjkyNTA0LCJleHAiOjE3MTc4ODQ1MDR9.eMUqs7DzYzLV-5HbNusmwnoB1MMym6BIIkI241N7GSQ
+CRITICAL - 2024-05-09 22:12:29 --> "auth" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\Filters\Filters->enableFilter('auth', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xamp\\htdocs\\buswork\\public\\index.php')
+DEBUG - 2024-05-09 22:22:14 --> JwtAuthGuard: Checking Authorization Header
+DEBUG - 2024-05-09 22:22:14 --> JwtAuthGuard: Authorization Header Found: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRlc3R1c2VyQGV4YW1wbGUuY29tIiwiaWQiOiI2NjNkNDk0OTk0NjI1IiwiaWF0IjoxNzE1MjkyNTA0LCJleHAiOjE3MTc4ODQ1MDR9.eMUqs7DzYzLV-5HbNusmwnoB1MMym6BIIkI241N7GSQ
+DEBUG - 2024-05-09 22:22:14 --> JwtAuthGuard: Token Found: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRlc3R1c2VyQGV4YW1wbGUuY29tIiwiaWQiOiI2NjNkNDk0OTk0NjI1IiwiaWF0IjoxNzE1MjkyNTA0LCJleHAiOjE3MTc4ODQ1MDR9.eMUqs7DzYzLV-5HbNusmwnoB1MMym6BIIkI241N7GSQ
+ERROR - 2024-05-09 22:22:14 --> JWT Validation Failed: Key material must not be empty
+DEBUG - 2024-05-09 22:22:14 --> JwtAuthGuard: Token Validation Failed
+DEBUG - 2024-05-09 22:22:14 --> JwtAuthGuard: Unauthorized Access
+DEBUG - 2024-05-09 22:25:11 --> JwtAuthGuard: Checking Authorization Header
+DEBUG - 2024-05-09 22:25:11 --> JwtAuthGuard: Authorization Header Found: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRlc3R1c2VyQGV4YW1wbGUuY29tIiwiaWQiOiI2NjNkNDk0OTk0NjI1IiwiaWF0IjoxNzE1MjkyNTA0LCJleHAiOjE3MTc4ODQ1MDR9.eMUqs7DzYzLV-5HbNusmwnoB1MMym6BIIkI241N7GSQ
+DEBUG - 2024-05-09 22:25:11 --> JwtAuthGuard: Token Found: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRlc3R1c2VyQGV4YW1wbGUuY29tIiwiaWQiOiI2NjNkNDk0OTk0NjI1IiwiaWF0IjoxNzE1MjkyNTA0LCJleHAiOjE3MTc4ODQ1MDR9.eMUqs7DzYzLV-5HbNusmwnoB1MMym6BIIkI241N7GSQ
+ERROR - 2024-05-09 22:25:11 --> JWT Validation Failed: Signature verification failed
+DEBUG - 2024-05-09 22:25:11 --> JwtAuthGuard: Token Validation Failed
+DEBUG - 2024-05-09 22:25:11 --> JwtAuthGuard: Unauthorized Access
+DEBUG - 2024-05-09 22:28:04 --> Login Request Data: {"email":"testuser@example.com","password":"password123"}
+DEBUG - 2024-05-09 22:28:04 --> Email: testuser@example.com, Password: password123
+DEBUG - 2024-05-09 22:28:04 --> User Fetched: {"id":"663d494994625","email":"testuser@example.com","name":"Test User","picture":null,"role":"user","password":"password123","created_at":"2024-05-09 22:08:09","updated_at":"2024-05-09 22:08:09"}
+DEBUG - 2024-05-09 22:28:04 --> JWT Token Created: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRlc3R1c2VyQGV4YW1wbGUuY29tIiwiaWQiOiI2NjNkNDk0OTk0NjI1IiwiaWF0IjoxNzE1MjkzNjg0LCJleHAiOjE3MTc4ODU2ODR9.Hx_e3OVIXiUmc7NAJhMw-UhhAs4CzPI4sputtFh2gyI
+DEBUG - 2024-05-09 22:28:04 --> Token Created: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRlc3R1c2VyQGV4YW1wbGUuY29tIiwiaWQiOiI2NjNkNDk0OTk0NjI1IiwiaWF0IjoxNzE1MjkzNjg0LCJleHAiOjE3MTc4ODU2ODR9.Hx_e3OVIXiUmc7NAJhMw-UhhAs4CzPI4sputtFh2gyI
+DEBUG - 2024-05-09 22:28:39 --> JwtAuthGuard: Checking Authorization Header
+DEBUG - 2024-05-09 22:28:39 --> JwtAuthGuard: Authorization Header Found: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRlc3R1c2VyQGV4YW1wbGUuY29tIiwiaWQiOiI2NjNkNDk0OTk0NjI1IiwiaWF0IjoxNzE1MjkzNjg0LCJleHAiOjE3MTc4ODU2ODR9.Hx_e3OVIXiUmc7NAJhMw-UhhAs4CzPI4sputtFh2gyI
+DEBUG - 2024-05-09 22:28:39 --> JwtAuthGuard: Token Found: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRlc3R1c2VyQGV4YW1wbGUuY29tIiwiaWQiOiI2NjNkNDk0OTk0NjI1IiwiaWF0IjoxNzE1MjkzNjg0LCJleHAiOjE3MTc4ODU2ODR9.Hx_e3OVIXiUmc7NAJhMw-UhhAs4CzPI4sputtFh2gyI
+DEBUG - 2024-05-09 22:28:39 --> JWT Token Validated: {"email":"testuser@example.com","id":"663d494994625","iat":1715293684,"exp":1717885684}
+DEBUG - 2024-05-09 22:28:39 --> JwtAuthGuard: Token Validated, User: {"email":"testuser@example.com","id":"663d494994625","iat":1715293684,"exp":1717885684}
+WARNING - 2024-05-09 22:28:39 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\JwtAuthGuard.php on line 34.
+ 1 SYSTEMPATH\Filters\Filters.php(173): App\Filters\JwtAuthGuard->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('bus/schedule', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xamp\\htdocs\\buswork\\public\\index.php')
+DEBUG - 2024-05-09 22:31:13 --> JWT Token Validated: {"email":"testuser@example.com","id":"663d494994625","iat":1715293684,"exp":1717885684}
+DEBUG - 2024-05-09 22:52:19 --> JwtAuthGuard: Checking Authorization Header
+DEBUG - 2024-05-09 22:52:19 --> JwtAuthGuard: Authorization Header Found: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRlc3R1c2VyQGV4YW1wbGUuY29tIiwiaWQiOiI2NjNkNDk0OTk0NjI1IiwiaWF0IjoxNzE1MjkzNjg0LCJleHAiOjE3MTc4ODU2ODR9.Hx_e3OVIXiUmc7NAJhMw-UhhAs4CzPI4sputtFh2gyI
+DEBUG - 2024-05-09 22:52:19 --> JwtAuthGuard: Token Found: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRlc3R1c2VyQGV4YW1wbGUuY29tIiwiaWQiOiI2NjNkNDk0OTk0NjI1IiwiaWF0IjoxNzE1MjkzNjg0LCJleHAiOjE3MTc4ODU2ODR9.Hx_e3OVIXiUmc7NAJhMw-UhhAs4CzPI4sputtFh2gyI
+DEBUG - 2024-05-09 22:52:19 --> JWT Token Validated: {"email":"testuser@example.com","id":"663d494994625","iat":1715293684,"exp":1717885684}
+DEBUG - 2024-05-09 22:52:19 --> JwtAuthGuard: Token Validated, User: {"email":"testuser@example.com","id":"663d494994625","iat":1715293684,"exp":1717885684}
+WARNING - 2024-05-09 22:52:19 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\JwtAuthGuard.php on line 34.
+ 1 SYSTEMPATH\Filters\Filters.php(173): App\Filters\JwtAuthGuard->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('orders/create', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xamp\\htdocs\\buswork\\public\\index.php')
+CRITICAL - 2024-05-09 22:52:19 --> Class "App\Libraries\RazorpayLibrary" not found
+in APPPATH\Services\OrdersService.php on line 21.
+ 1 APPPATH\Controllers\OrdersController.php(14): App\Services\OrdersService->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\OrdersController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xamp\\htdocs\\buswork\\public\\index.php')
+DEBUG - 2024-05-09 23:30:07 --> JwtAuthGuard: Checking Authorization Header
+DEBUG - 2024-05-09 23:30:07 --> JwtAuthGuard: Authorization Header Found: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRlc3R1c2VyQGV4YW1wbGUuY29tIiwiaWQiOiI2NjNkNDk0OTk0NjI1IiwiaWF0IjoxNzE1MjkzNjg0LCJleHAiOjE3MTc4ODU2ODR9.Hx_e3OVIXiUmc7NAJhMw-UhhAs4CzPI4sputtFh2gyI
+DEBUG - 2024-05-09 23:30:07 --> JwtAuthGuard: Token Found: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRlc3R1c2VyQGV4YW1wbGUuY29tIiwiaWQiOiI2NjNkNDk0OTk0NjI1IiwiaWF0IjoxNzE1MjkzNjg0LCJleHAiOjE3MTc4ODU2ODR9.Hx_e3OVIXiUmc7NAJhMw-UhhAs4CzPI4sputtFh2gyI
+DEBUG - 2024-05-09 23:30:07 --> JWT Token Validated: {"email":"testuser@example.com","id":"663d494994625","iat":1715293684,"exp":1717885684}
+DEBUG - 2024-05-09 23:30:07 --> JwtAuthGuard: Token Validated, User: {"email":"testuser@example.com","id":"663d494994625","iat":1715293684,"exp":1717885684}
+WARNING - 2024-05-09 23:30:07 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\JwtAuthGuard.php on line 34.
+ 1 SYSTEMPATH\Filters\Filters.php(173): App\Filters\JwtAuthGuard->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('orders/create', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xamp\\htdocs\\buswork\\public\\index.php')
+CRITICAL - 2024-05-09 23:30:07 --> Class "Ramsey\Uuid\Uuid" not found
+in APPPATH\Services\OrdersService.php on line 30.
+ 1 APPPATH\Controllers\OrdersController.php(28): App\Services\OrdersService->createOrder('schedule-1', 2, '663d494994625')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\OrdersController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrdersController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xamp\\htdocs\\buswork\\public\\index.php')
+DEBUG - 2024-05-09 23:34:11 --> JwtAuthGuard: Checking Authorization Header
+DEBUG - 2024-05-09 23:34:11 --> JwtAuthGuard: Authorization Header Found: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRlc3R1c2VyQGV4YW1wbGUuY29tIiwiaWQiOiI2NjNkNDk0OTk0NjI1IiwiaWF0IjoxNzE1MjkzNjg0LCJleHAiOjE3MTc4ODU2ODR9.Hx_e3OVIXiUmc7NAJhMw-UhhAs4CzPI4sputtFh2gyI
+DEBUG - 2024-05-09 23:34:11 --> JwtAuthGuard: Token Found: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRlc3R1c2VyQGV4YW1wbGUuY29tIiwiaWQiOiI2NjNkNDk0OTk0NjI1IiwiaWF0IjoxNzE1MjkzNjg0LCJleHAiOjE3MTc4ODU2ODR9.Hx_e3OVIXiUmc7NAJhMw-UhhAs4CzPI4sputtFh2gyI
+DEBUG - 2024-05-09 23:34:11 --> JWT Token Validated: {"email":"testuser@example.com","id":"663d494994625","iat":1715293684,"exp":1717885684}
+DEBUG - 2024-05-09 23:34:11 --> JwtAuthGuard: Token Validated, User: {"email":"testuser@example.com","id":"663d494994625","iat":1715293684,"exp":1717885684}
+WARNING - 2024-05-09 23:34:11 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\JwtAuthGuard.php on line 34.
+ 1 SYSTEMPATH\Filters\Filters.php(173): App\Filters\JwtAuthGuard->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('orders/create', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xamp\\htdocs\\buswork\\public\\index.php')

@@ -1,0 +1,86 @@
+DEBUG - 2024-05-10 08:30:31 --> Login Request Data: {"email":"crentsilkwayie@gmail.com","password":"123456"}
+DEBUG - 2024-05-10 08:30:31 --> Email: crentsilkwayie@gmail.com, Password: 123456
+DEBUG - 2024-05-10 08:30:31 --> User Fetched: null
+DEBUG - 2024-05-10 08:30:31 --> User not found
+DEBUG - 2024-05-10 08:31:03 --> Register Request Data: {"email":"testemail3@example.com","name":"Test 19","password":"password123"}
+DEBUG - 2024-05-10 08:31:03 --> Password set to plaintext: password123
+DEBUG - 2024-05-10 08:31:16 --> Login Request Data: {"email":"testemail3@example.com","password":"password123"}
+DEBUG - 2024-05-10 08:31:16 --> Email: testemail3@example.com, Password: password123
+DEBUG - 2024-05-10 08:31:16 --> User Fetched: {"id":"663ddb47e1123","email":"testemail3@example.com","name":"Test 19","picture":null,"role":"user","password":"password123","created_at":"2024-05-10 08:31:03","updated_at":"2024-05-10 08:31:03"}
+DEBUG - 2024-05-10 08:31:16 --> JWT Token Created: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRlc3RlbWFpbDNAZXhhbXBsZS5jb20iLCJpZCI6IjY2M2RkYjQ3ZTExMjMiLCJpYXQiOjE3MTUzMjk4NzYsImV4cCI6MTcxNzkyMTg3Nn0.5XxgI9R0T4-uL05DeVU23T_1SWRwYceuJfBMsR7iTIY
+DEBUG - 2024-05-10 08:31:16 --> Token Created: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRlc3RlbWFpbDNAZXhhbXBsZS5jb20iLCJpZCI6IjY2M2RkYjQ3ZTExMjMiLCJpYXQiOjE3MTUzMjk4NzYsImV4cCI6MTcxNzkyMTg3Nn0.5XxgI9R0T4-uL05DeVU23T_1SWRwYceuJfBMsR7iTIY
+DEBUG - 2024-05-10 08:31:21 --> JwtAuthGuard: Checking Authorization Header
+DEBUG - 2024-05-10 08:31:21 --> JwtAuthGuard: Authorization Header Not Found
+DEBUG - 2024-05-10 08:31:21 --> JwtAuthGuard: Unauthorized Access
+DEBUG - 2024-05-10 08:31:52 --> JwtAuthGuard: Checking Authorization Header
+DEBUG - 2024-05-10 08:31:52 --> JwtAuthGuard: Authorization Header Not Found
+DEBUG - 2024-05-10 08:31:52 --> JwtAuthGuard: Unauthorized Access
+DEBUG - 2024-05-10 08:31:56 --> JwtAuthGuard: Checking Authorization Header
+DEBUG - 2024-05-10 08:31:56 --> JwtAuthGuard: Authorization Header Not Found
+DEBUG - 2024-05-10 08:31:56 --> JwtAuthGuard: Unauthorized Access
+DEBUG - 2024-05-10 08:32:00 --> JwtAuthGuard: Checking Authorization Header
+DEBUG - 2024-05-10 08:32:00 --> JwtAuthGuard: Authorization Header Not Found
+DEBUG - 2024-05-10 08:32:00 --> JwtAuthGuard: Unauthorized Access
+DEBUG - 2024-05-10 08:32:30 --> JwtAuthGuard: Checking Authorization Header
+DEBUG - 2024-05-10 08:32:30 --> JwtAuthGuard: Authorization Header Not Found
+DEBUG - 2024-05-10 08:32:30 --> JwtAuthGuard: Unauthorized Access
+DEBUG - 2024-05-10 08:39:03 --> JwtAuthGuard: Checking Authorization Header
+DEBUG - 2024-05-10 08:39:03 --> JwtAuthGuard: Authorization Header Not Found
+DEBUG - 2024-05-10 08:39:03 --> JwtAuthGuard: Unauthorized Access
+DEBUG - 2024-05-10 09:56:48 --> JwtAuthGuard: Checking Authorization Header
+DEBUG - 2024-05-10 09:56:48 --> JwtAuthGuard: Authorization Header Not Found
+DEBUG - 2024-05-10 09:56:48 --> JwtAuthGuard: Unauthorized Access
+DEBUG - 2024-05-10 10:01:31 --> JwtAuthGuard: Checking Authorization Header
+DEBUG - 2024-05-10 10:01:31 --> JwtAuthGuard: Authorization Header Not Found
+DEBUG - 2024-05-10 10:01:31 --> JwtAuthGuard: Unauthorized Access
+DEBUG - 2024-05-10 10:01:31 --> JwtAuthGuard: Checking Authorization Header
+DEBUG - 2024-05-10 10:01:31 --> JwtAuthGuard: Authorization Header Not Found
+DEBUG - 2024-05-10 10:01:31 --> JwtAuthGuard: Unauthorized Access
+DEBUG - 2024-05-10 10:01:31 --> JwtAuthGuard: Checking Authorization Header
+DEBUG - 2024-05-10 10:01:31 --> JwtAuthGuard: Authorization Header Not Found
+DEBUG - 2024-05-10 10:01:31 --> JwtAuthGuard: Unauthorized Access
+DEBUG - 2024-05-10 10:13:27 --> Login Request Data: {"email":"testuser@example.com","password":"password"}
+DEBUG - 2024-05-10 10:13:27 --> Email: testuser@example.com, Password: password
+DEBUG - 2024-05-10 10:13:27 --> User Fetched: {"id":"663d494994625","email":"testuser@example.com","name":"Test User","picture":null,"role":"user","password":"password123","created_at":"2024-05-09 22:08:09","updated_at":"2024-05-09 22:08:09"}
+DEBUG - 2024-05-10 10:13:27 --> Password Verification Failed
+DEBUG - 2024-05-10 10:13:49 --> Login Request Data: {"email":"testuser@example.com","password":"password123"}
+DEBUG - 2024-05-10 10:13:49 --> Email: testuser@example.com, Password: password123
+DEBUG - 2024-05-10 10:13:49 --> User Fetched: {"id":"663d494994625","email":"testuser@example.com","name":"Test User","picture":null,"role":"user","password":"password123","created_at":"2024-05-09 22:08:09","updated_at":"2024-05-09 22:08:09"}
+DEBUG - 2024-05-10 10:13:49 --> JWT Token Created: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRlc3R1c2VyQGV4YW1wbGUuY29tIiwiaWQiOiI2NjNkNDk0OTk0NjI1IiwiaWF0IjoxNzE1MzM2MDI5LCJleHAiOjE3MTc5MjgwMjl9.8lLRyEYhmTrB6o3-BkYME442NuuIHti3CLRnkxdkzeU
+DEBUG - 2024-05-10 10:13:49 --> Token Created: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRlc3R1c2VyQGV4YW1wbGUuY29tIiwiaWQiOiI2NjNkNDk0OTk0NjI1IiwiaWF0IjoxNzE1MzM2MDI5LCJleHAiOjE3MTc5MjgwMjl9.8lLRyEYhmTrB6o3-BkYME442NuuIHti3CLRnkxdkzeU
+DEBUG - 2024-05-10 10:13:53 --> JwtAuthGuard: Checking Authorization Header
+DEBUG - 2024-05-10 10:13:53 --> JwtAuthGuard: Authorization Header Not Found
+DEBUG - 2024-05-10 10:13:53 --> JwtAuthGuard: Unauthorized Access
+DEBUG - 2024-05-10 10:14:01 --> JwtAuthGuard: Checking Authorization Header
+DEBUG - 2024-05-10 10:14:01 --> JwtAuthGuard: Authorization Header Not Found
+DEBUG - 2024-05-10 10:14:01 --> JwtAuthGuard: Unauthorized Access
+DEBUG - 2024-05-10 10:14:17 --> JwtAuthGuard: Checking Authorization Header
+DEBUG - 2024-05-10 10:14:17 --> JwtAuthGuard: Authorization Header Not Found
+DEBUG - 2024-05-10 10:14:17 --> JwtAuthGuard: Unauthorized Access
+DEBUG - 2024-05-10 10:14:23 --> Login Request Data: {"email":"testuser@example.com","password":"password123"}
+DEBUG - 2024-05-10 10:14:23 --> Email: testuser@example.com, Password: password123
+DEBUG - 2024-05-10 10:14:23 --> User Fetched: {"id":"663d494994625","email":"testuser@example.com","name":"Test User","picture":null,"role":"user","password":"password123","created_at":"2024-05-09 22:08:09","updated_at":"2024-05-09 22:08:09"}
+DEBUG - 2024-05-10 10:14:23 --> JWT Token Created: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRlc3R1c2VyQGV4YW1wbGUuY29tIiwiaWQiOiI2NjNkNDk0OTk0NjI1IiwiaWF0IjoxNzE1MzM2MDYzLCJleHAiOjE3MTc5MjgwNjN9.4sI9nitbqMaN7VWtZvgRFvUCLJYtd9CGxENyP2sLi4A
+DEBUG - 2024-05-10 10:14:23 --> Token Created: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRlc3R1c2VyQGV4YW1wbGUuY29tIiwiaWQiOiI2NjNkNDk0OTk0NjI1IiwiaWF0IjoxNzE1MzM2MDYzLCJleHAiOjE3MTc5MjgwNjN9.4sI9nitbqMaN7VWtZvgRFvUCLJYtd9CGxENyP2sLi4A
+DEBUG - 2024-05-10 10:14:26 --> JwtAuthGuard: Checking Authorization Header
+DEBUG - 2024-05-10 10:14:26 --> JwtAuthGuard: Authorization Header Not Found
+DEBUG - 2024-05-10 10:14:26 --> JwtAuthGuard: Unauthorized Access
+DEBUG - 2024-05-10 10:15:43 --> JwtAuthGuard: Checking Authorization Header
+DEBUG - 2024-05-10 10:15:43 --> JwtAuthGuard: Authorization Header Not Found
+DEBUG - 2024-05-10 10:15:43 --> JwtAuthGuard: Unauthorized Access
+DEBUG - 2024-05-10 10:16:36 --> Login Request Data: {"email":"testuser@example.com","password":"password123"}
+DEBUG - 2024-05-10 10:16:36 --> Email: testuser@example.com, Password: password123
+DEBUG - 2024-05-10 10:16:36 --> User Fetched: {"id":"663d494994625","email":"testuser@example.com","name":"Test User","picture":null,"role":"user","password":"password123","created_at":"2024-05-09 22:08:09","updated_at":"2024-05-09 22:08:09"}
+DEBUG - 2024-05-10 10:16:36 --> JWT Token Created: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRlc3R1c2VyQGV4YW1wbGUuY29tIiwiaWQiOiI2NjNkNDk0OTk0NjI1IiwiaWF0IjoxNzE1MzM2MTk2LCJleHAiOjE3MTc5MjgxOTZ9.JFFpm86d7d2IJ052wMGAGGCIJjFiNdqyuJRpMgQCKAY
+DEBUG - 2024-05-10 10:16:36 --> Token Created: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRlc3R1c2VyQGV4YW1wbGUuY29tIiwiaWQiOiI2NjNkNDk0OTk0NjI1IiwiaWF0IjoxNzE1MzM2MTk2LCJleHAiOjE3MTc5MjgxOTZ9.JFFpm86d7d2IJ052wMGAGGCIJjFiNdqyuJRpMgQCKAY
+DEBUG - 2024-05-10 10:16:53 --> JwtAuthGuard: Checking Authorization Header
+DEBUG - 2024-05-10 10:16:53 --> JwtAuthGuard: Authorization Header Not Found
+DEBUG - 2024-05-10 10:16:53 --> JwtAuthGuard: Unauthorized Access
+DEBUG - 2024-05-10 10:21:36 --> Login Request Data: {"email":"admin@example.com","password":"password123"}
+DEBUG - 2024-05-10 10:21:36 --> Email: admin@example.com, Password: password123
+DEBUG - 2024-05-10 10:21:36 --> User Fetched: {"id":"admin-uuid","email":"admin@example.com","name":"Admin User","picture":null,"role":"admin","password":"password123","created_at":"2024-05-10 10:21:04","updated_at":"2024-05-10 10:21:04"}
+DEBUG - 2024-05-10 10:21:36 --> JWT Token Created: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwiaWQiOiJhZG1pbi11dWlkIiwiaWF0IjoxNzE1MzM2NDk2LCJleHAiOjE3MTc5Mjg0OTZ9.q6nSPA8deiFMPXkbWF-4hhdrZjQ8RLbDOHrPEFRi6ss
+DEBUG - 2024-05-10 10:21:36 --> Token Created: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwiaWQiOiJhZG1pbi11dWlkIiwiaWF0IjoxNzE1MzM2NDk2LCJleHAiOjE3MTc5Mjg0OTZ9.q6nSPA8deiFMPXkbWF-4hhdrZjQ8RLbDOHrPEFRi6ss
+DEBUG - 2024-05-10 10:22:06 --> JwtAuthGuard: Checking Authorization Header
+DEBUG - 2024-05-10 10:22:06 --> JwtAuthGuard: Authorization Header Not Found
+DEBUG - 2024-05-10 10:22:06 --> JwtAuthGuard: Unauthorized Access

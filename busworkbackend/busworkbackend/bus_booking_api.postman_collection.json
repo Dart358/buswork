@@ -1,0 +1,409 @@
+{
+    "info": {
+      "name": "Bus Booking API",
+      "_postman_id": "12345-67890-abcdef",
+      "description": "Postman collection for testing the Bus Booking API",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Auth",
+        "item": [
+          {
+            "name": "Register User",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "type": "text"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"email\": \"user@example.com\",\n  \"name\": \"Test User\",\n  \"password\": \"password123\"\n}"
+              },
+              "url": {
+                "raw": "http://localhost:8080/auth/register",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "8080",
+                "path": ["auth", "register"]
+              }
+            }
+          },
+          {
+            "name": "Login User",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "type": "text"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"email\": \"user@example.com\",\n  \"password\": \"password123\"\n}"
+              },
+              "url": {
+                "raw": "http://localhost:8080/auth/login",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "8080",
+                "path": ["auth", "login"]
+              }
+            }
+          },
+          {
+            "name": "Get Current User",
+            "request": {
+              "method": "GET",
+              "header": [
+                {
+                  "key": "Authorization",
+                  "value": "Bearer {{token}}",
+                  "type": "text"
+                }
+              ],
+              "url": {
+                "raw": "http://localhost:8080/auth/me",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "8080",
+                "path": ["auth", "me"]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Bus",
+        "item": [
+          {
+            "name": "Get Bus Schedule",
+            "request": {
+              "method": "GET",
+              "header": [
+                {
+                  "key": "Authorization",
+                  "value": "Bearer {{token}}",
+                  "type": "text"
+                }
+              ],
+              "url": {
+                "raw": "http://localhost:8080/bus/schedule",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "8080",
+                "path": ["bus", "schedule"]
+              }
+            }
+          },
+          {
+            "name": "Create Bus",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "type": "text"
+                },
+                {
+                  "key": "Authorization",
+                  "value": "Bearer {{admin_token}}",
+                  "type": "text"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"number\": \"BUS-003\",\n  \"capacity\": 40,\n  \"contractorId\": \"contractor-1\",\n  \"conductorId\": \"conductor-1\"\n}"
+              },
+              "url": {
+                "raw": "http://localhost:8080/bus/bus",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "8080",
+                "path": ["bus", "bus"]
+              }
+            }
+          },
+          {
+            "name": "Get All Conductors",
+            "request": {
+              "method": "GET",
+              "header": [
+                {
+                  "key": "Authorization",
+                  "value": "Bearer {{admin_token}}",
+                  "type": "text"
+                }
+              ],
+              "url": {
+                "raw": "http://localhost:8080/bus/conductor",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "8080",
+                "path": ["bus", "conductor"]
+              }
+            }
+          },
+          {
+            "name": "Get Conductor By ID",
+            "request": {
+              "method": "GET",
+              "header": [
+                {
+                  "key": "Authorization",
+                  "value": "Bearer {{admin_token}}",
+                  "type": "text"
+                }
+              ],
+              "url": {
+                "raw": "http://localhost:8080/bus/conductor/(:segment)",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "8080",
+                "path": ["bus", "conductor", "(:segment)"]
+              }
+            }
+          },
+          {
+            "name": "Create Conductor",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "type": "text"
+                },
+                {
+                  "key": "Authorization",
+                  "value": "Bearer {{admin_token}}",
+                  "type": "text"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"name\": \"Conductor Three\",\n  \"phone\": \"9876543210\"\n}"
+              },
+              "url": {
+                "raw": "http://localhost:8080/bus/conductor",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "8080",
+                "path": ["bus", "conductor"]
+              }
+            }
+          },
+          {
+            "name": "Delete Conductor",
+            "request": {
+              "method": "DELETE",
+              "header": [
+                {
+                  "key": "Authorization",
+                  "value": "Bearer {{admin_token}}",
+                  "type": "text"
+                }
+              ],
+              "url": {
+                "raw": "http://localhost:8080/bus/conductor/(:segment)",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "8080",
+                "path": ["bus", "conductor", "(:segment)"]
+              }
+            }
+          },
+          {
+            "name": "Get All Contractors",
+            "request": {
+              "method": "GET",
+              "header": [
+                {
+                  "key": "Authorization",
+                  "value": "Bearer {{admin_token}}",
+                  "type": "text"
+                }
+              ],
+              "url": {
+                "raw": "http://localhost:8080/bus/contractor",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "8080",
+                "path": ["bus", "contractor"]
+              }
+            }
+          },
+          {
+            "name": "Get Contractor By ID",
+            "request": {
+              "method": "GET",
+              "header": [
+                {
+                  "key": "Authorization",
+                  "value": "Bearer {{admin_token}}",
+                  "type": "text"
+                }
+              ],
+              "url": {
+                "raw": "http://localhost:8080/bus/contractor/(:segment)",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "8080",
+                "path": ["bus", "contractor", "(:segment)"]
+              }
+            }
+          },
+          {
+            "name": "Create Contractor",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "type": "text"
+                },
+                {
+                  "key": "Authorization",
+                  "value": "Bearer {{admin_token}}",
+                  "type": "text"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"name\": \"Contractor Three\",\n  \"email\": \"contractor3@example.com\",\n  \"phone\": \"1122334455\",\n  \"address\": \"Address 3\"\n}"
+              },
+              "url": {
+                "raw": "http://localhost:8080/bus/contractor",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "8080",
+                "path": ["bus", "contractor"]
+              }
+            }
+          },
+          {
+            "name": "Delete Contractor",
+            "request": {
+              "method": "DELETE",
+              "header": [
+                {
+                  "key": "Authorization",
+                  "value": "Bearer {{admin_token}}",
+                  "type": "text"
+                }
+              ],
+              "url": {
+                "raw": "http://localhost:8080/bus/contractor/(:segment)",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "8080",
+                "path": ["bus", "contractor", "(:segment)"]
+              }
+            }
+          },
+          {
+            "name": "Create Schedule",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "type": "text"
+                },
+                {
+                  "key": "Authorization",
+                  "value": "Bearer {{admin_token}}",
+                  "type": "text"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"busNumber\": \"BUS-003\",\n  \"from\": \"City A\",\n  \"to\": \"City B\",\n  \"checkpoints\": [\"Checkpoint 1\", \"Checkpoint 2\"],\n  \"departureTime\": \"09:00 AM\",\n  \"ticketPrice\": 100,\n  \"days\": [\"Monday\", \"Wednesday\"]\n}"
+              },
+              "url": {
+                "raw": "http://localhost:8080/bus/schedule",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "8080",
+                "path": ["bus", "schedule"]
+              }
+            }
+          },
+          {
+            "name": "Admin Protected Route",
+            "request": {
+              "method": "GET",
+              "header": [
+                {
+                  "key": "Authorization",
+                  "value": "Bearer {{admin_token}}",
+                  "type": "text"
+                }
+              ],
+              "url": {
+                "raw": "http://localhost:8080/bus/admin-protected",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "8080",
+                "path": ["bus", "admin-protected"]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Orders",
+        "item": [
+          {
+            "name": "Create Order",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "type": "text"
+                },
+                {
+                  "key": "Authorization",
+                  "value": "Bearer {{token}}",
+                  "type": "text"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"scheduleId\": \"schedule-1\",\n  \"ticketQuantity\": 2\n}"
+              },
+              "url": {
+                "raw": "http://localhost:8080/orders/create",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "8080",
+                "path": ["orders", "create"]
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "variable": [
+      {
+        "key": "token",
+        "value": ""
+      },
+      {
+        "key": "admin_token",
+        "value": ""
+      }
+    ]
+  }
+  
